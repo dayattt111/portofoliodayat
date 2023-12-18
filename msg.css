@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@700&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: gray;
+}
+main{
+    
+    /* background-color: aqua; */
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 20px auto;
+    padding: 100px auto;
+}
+.wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 400px;
+    text-align: center;
+}
+main .txt{
+    padding: 100px;
+}
+.wrap img{
+    height: 450px;
+}
+.wrap button{
+    border-radius: 20px;
+    background-color: darkgray;
+    padding: 5px 20px 5px 20px;
+    margin-top: 30px;
+}
+.wrap button a{
+    font-size: 2rem;
+    color: black;
+}
+#btn{
+    background-color: lightgray;
+}
+footer{
+    padding: 50px 25px 50px 25px;
+    /* max-width: auto; */
+    background-color: darkgray;
+}
+.footer-flex{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end-footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.end-footer i{
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    body{
+        width: auto;
+        background-color: darkgray;
+    }
+    main{
+        width: 100%;
+    }
+    .wrap{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        text-align: center;
+    }
+    .wrap button{
+        margin-top: 10px;
+    }
+    .wrap .txt{
+        padding: 50px 0px 0px 0px;
+        text-align: center;
+    }
+    .txt h4{
+        font-size: 10px;
+    }
+    footer{
+        width: auto;
+        float: none;
+        background-color: lightgray;
+        font-size: 10px;
+    }
+    .footer-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+@media screen and (max-width: 426px) {
+    body{
+        width: auto;
+    }
+    main{
+        width: auto;
+    }
+    .wrap{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        text-align: center;
+    }
+    main .txt{
+        padding: 20px;
+        width: 100%;
+        order: 2;
+    }
+    .bg1{
+        order: 1;
+        margin-top: 80px;
+    }
+    .bg1 img{
+        height: 250px;
+    }
+}
